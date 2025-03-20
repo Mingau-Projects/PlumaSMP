@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pluma SMP</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body> 
+
+    <div class="Gradient">
+        <br><br>
+        <img src="images/PlumaSMP.png" height="150px" width="300px">
+        <br><br>
+    </div>
+
+    <br>
+
+    <h1>Bem Vindo ao Site Oficial do Pluma SMP!<h1>
+
+        <br><br>
+
+        <h2>Endereços de IP:</h2>
+
+        <h3>Endereço IP</h3>
+
+            <input type="text" value="pluma.smp.falixsrv.me" id="IP1">
+            <input type="button" value="Copiar" onclick="getIP1()">
+            <br><br>
+            <input type="text" value="pluma.gg.falixsrv.me" id="IP2">
+            <input type="button" value="Copiar" onclick="getIP2()">
+            <br><br>
+            <input type="text" value="play.pluma.falixsrv.me" id="IP3">
+            <input type="button" value="Copiar" onclick="getIP3()">
+
+            <br><br>
+            <h3>Porta: </h3>
+        <input type="text" value="6279" id="Port">
+        <input type="button" value="Copiar" onclick="getPort()">
+
+        <br><br>
+
+        <h1>Um Servidor Survival!</h1>
+
+        <br><br>
+
+        <h3>Aberto Para todos jogar!</h3>
+        <h3>Java e Bedrock, 1.21.4</h3>
+
+
+            <script>
+
+
+                var port = document.getElementById("Port");
+                var ip1 = document.getElementById("IP1");
+                var ip2 = document.getElementById("IP2");
+                var ip3 = document.getElementById("IP3");
+
+                function getPort() {
+                    port.select();
+                    port.setSelectionRange(0, 99999);
+                    navigator.clipboard.writeText(port.value);
+                    alert("Copied the text: " + port.value);
+                }
+
+                function getIP1() {
+                    ip1.select();
+                    ip1.setSelectionRange(0, 99999);
+                    navigator.clipboard.writeText(ip1.value);
+                    alert("Copied the text: " + ip1.value);
+                }
+
+                function getIP2() {
+                    ip2.select();
+                    ip2.setSelectionRange(0, 99999);
+                    navigator.clipboard.writeText(ip2.value);
+                    alert("Copied the text: " + ip2.value);
+                }
+
+                function getIP3() {
+                    ip3.select();
+                    ip3.setSelectionRange(0, 99999);
+                    navigator.clipboard.writeText(ip3.value);
+                    alert("Copied the text: " + ip3.value);
+                }
+
+
+
+
+            </script>
+
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
